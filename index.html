@@ -24,13 +24,176 @@
         />
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
-    <body>
-        <h1>Movie Dump</h1>
+    <body class="d-flex">
+        <div class="vh-100 p-4 position-sticky top-0">
+            <nav
+                class="sidebar navbar d-flex flex-column justify-content-between align-items-center h-100 p-4 rounded-4"
+            >
+                <ul
+                    class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-4"
+                >
+                    <li>
+                        <a href="#"
+                            ><i class="fs-5 fa-solid fa-house-chimney"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fs-5 fa-solid fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fs-5 fa-solid fa-paper-plane"></i
+                        ></a>
+                    </li>
+                </ul>
+                <a href="#"
+                    ><i class="fs-5 fa-solid fa-right-from-bracket"></i
+                ></a>
+            </nav>
+        </div>
+
+        <main class="py-4 pe-4">
+            <header>
+                <a href="#">
+                    <img src="assets/img/magic-ball.webp" alt="" width="80" />
+                    <h1>Movie Dump</h1>
+                </a>
+
+                <button>Log In</button>
+                <button>Sign Up</button>
+            </header>
+
+            <section class="platforms">
+                <button>Max</button>
+                <button>Netflix</button>
+                <button>Disney</button>
+                <button>Prime</button>
+                <button>Claro</button>
+                <button>Paramount</button>
+            </section>
+
+            <section class="movies">
+                <article>
+                    <h2>Destacado</h2>
+                    <img src="assets/img/casa-de-papel.webp" alt="" />
+                    <p>La Casa de Papel</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iure alias, dicta magni nam ipsa tempore eum aut
+                        quidem, inventore reiciendis assumenda soluta
+                        consequatur minima! Quibusdam dolore soluta odio? Ad
+                        natus dolor veniam at ipsam porro in, officia aliquid
+                        obcaecati possimus dignissimos veritatis similique non,
+                        ducimus eius necessitatibus maxime provident repellat.
+                    </p>
+                    <div>
+                        <p>Fantasy/Sci-Fi</p>
+                        <p>2018</p>
+                        <p>2h 16m</p>
+                    </div>
+                </article>
+
+                <article>
+                    <article>
+                        <h3>Novedades</h3>
+                        <div>
+                            <img src="assets/img/wolverine.webp" alt="" />
+                            <img src="assets/img/annabelle.webp" alt="" />
+                            <img
+                                src="assets/img/guardians-of-galaxy.webp"
+                                alt=""
+                            />
+                            <img src="assets/img/killbill.webp" alt="" />
+                            <img
+                                src="assets/img/bohemian-rhapsody.webp"
+                                alt=""
+                            />
+                        </div>
+                    </article>
+
+                    <article>
+                        <h3>Recomendados</h3>
+                        <div>
+                            <img src="assets/img/wolverine.webp" alt="" />
+                            <img src="assets/img/annabelle.webp" alt="" />
+                            <img
+                                src="assets/img/guardians-of-galaxy.webp"
+                                alt=""
+                            />
+                            <img src="assets/img/killbill.webp" alt="" />
+                            <img
+                                src="assets/img/bohemian-rhapsody.webp"
+                                alt=""
+                            />
+                        </div>
+                    </article>
+                </article>
+            </section>
+
+            <section class="family">
+                <h2>Familia</h2>
+                <article>
+                    <img src="assets/img/wolverine.webp" alt="" />
+                    <img src="assets/img/annabelle.webp" alt="" />
+                    <img src="assets/img/guardians-of-galaxy.webp" alt="" />
+                    <img src="assets/img/killbill.webp" alt="" />
+                    <img src="assets/img/bohemian-rhapsody.webp" alt="" />
+                    <img src="assets/img/ironman.webp" alt="" />
+                </article>
+            </section>
+
+            <section class="comedy">
+                <h2>Comedia</h2>
+                <article>
+                    <img src="assets/img/wolverine.webp" alt="" />
+                    <img src="assets/img/annabelle.webp" alt="" />
+                    <img src="assets/img/guardians-of-galaxy.webp" alt="" />
+                    <img src="assets/img/killbill.webp" alt="" />
+                    <img src="assets/img/bohemian-rhapsody.webp" alt="" />
+                    <img src="assets/img/ironman.webp" alt="" />
+                </article>
+            </section>
+
+            <footer>
+                <div>
+                    <a href="#">
+                        <img
+                            src="assets/img/magic-ball-lines.webp"
+                            alt=""
+                            width="40"
+                        />
+                        <p>Movie Dump</p>
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="#top">Inicio</a></li>
+                    <li><a href="/register">Registro</a></li>
+                    <li><a href="/contact">Contacto</a></li>
+                    <li>
+                        <a
+                            href="https://github.com/miklegonza/movie-dump"
+                            target="_blank"
+                            >GitHub</a
+                        >
+                    </li>
+                </ul>
+
+                <div>
+                    <p>
+                        No hay copyright; Desarrollado por:
+                        <a href="https://github.com/miklegonza">miklegonza</a>
+                    </p>
+                    <p>2024</p>
+                </div>
+            </footer>
+        </main>
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+        <script src="assets/js/index.js"></script>
     </body>
 </html>
