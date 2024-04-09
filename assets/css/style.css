@@ -8,7 +8,24 @@
 }
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: var(--background-dark);
+    color: var(--white);
+}
 
+a {
+    color: var(--white);
+}
+
+/* provisional */
+img {
+    width: 160px;
+}
+
+.sidebar {
+    background-color: var(--primary-dark);
+    width: 72px;
+}
