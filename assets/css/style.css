@@ -21,11 +21,6 @@ a {
     text-decoration: none;
 }
 
-/* provisional */
-/* img {
-    width: 160px;
-} */
-
 .sidebar {
     background-color: var(--primary-dark);
     width: 72px;
@@ -44,7 +39,28 @@ a {
     background-color: var(--background-dark);
 }
 
+.btn-platform {
+    border: 2px solid var(--primary-dark);
+    padding: 1rem 1.5rem;
+    width: 10rem;
+    color: var(--white); /* Provisoinal */
+}
+
 .btn-login:hover,
-.btn-signup:hover {
+.btn-signup:hover,
+.btn-platform:hover {
     background-color: var(--secondary-dark);
+}
+
+.img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+.small {
+    width: 8rem;
+}
+
+.big {
+    width: 10rem;
 }
