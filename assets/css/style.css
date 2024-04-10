@@ -18,14 +18,33 @@ body {
 
 a {
     color: var(--white);
+    text-decoration: none;
 }
 
 /* provisional */
-img {
+/* img {
     width: 160px;
-}
+} */
 
 .sidebar {
     background-color: var(--primary-dark);
     width: 72px;
+}
+
+.btn-account {
+    color: var(--white);
+    border: 2px solid var(--primary-dark);
+}
+
+.btn-login {
+    background-color: var(--primary-dark);
+}
+
+.btn-signup {
+    background-color: var(--background-dark);
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+    background-color: var(--secondary-dark);
 }

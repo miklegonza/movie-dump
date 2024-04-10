@@ -52,15 +52,17 @@
             </nav>
         </div>
 
-        <main class="py-4 pe-4">
-            <header>
-                <a href="#">
+        <main class="d-flex flex-column gap-3 py-4 pe-4">
+            <header class="d-flex justify-content-between align-items-center">
+                <a href="#" class="d-flex align-items-center">
                     <img src="assets/img/magic-ball.webp" alt="" width="80" />
-                    <h1>Movie Dump</h1>
+                    <h1 class="fw-bold mx-2 my-0">Movie Dump</h1>
                 </a>
 
-                <button>Log In</button>
-                <button>Sign Up</button>
+                <div class="d-flex gap-4">
+                    <button class="btn-account btn-login btn px-5 py-2 rounded-4">Log In</button>
+                    <button class="btn-account btn-signup btn px-5 py-2 rounded-4">Sign Up</button>
+                </div>
             </header>
 
             <section class="platforms">
