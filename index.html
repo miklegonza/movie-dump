@@ -308,37 +308,61 @@
                 </article>
             </section>
 
-            <footer>
+            <footer
+                class="d-flex flex-column justify-content-center align-items-center"
+            >
                 <div>
-                    <a href="#">
+                    <a href="#" class="d-flex align-items-center gap-2">
                         <img
                             src="assets/img/magic-ball-lines.webp"
                             alt=""
                             width="40"
                         />
-                        <p>Movie Dump</p>
+                        <p class="fs-4 m-0">Movie Dump</p>
                     </a>
                 </div>
 
-                <ul>
-                    <li><a href="#top">Inicio</a></li>
-                    <li><a href="/register">Registro</a></li>
-                    <li><a href="/contact">Contacto</a></li>
+                <ul
+                    class="list-unstyled d-flex justify-content-between align-items-center gap-3 my-3"
+                >
+                    <li>
+                        <a class="footer-link underline" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="footer-link underline" href="/register.html">
+                            Registro
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link underline" href="/contact.html">
+                            Contacto
+                        </a>
+                    </li>
                     <li>
                         <a
+                            class="footer-link underline"
                             href="https://github.com/miklegonza/movie-dump"
                             target="_blank"
-                            >GitHub</a
+                            rel="noopener noreferrer"
                         >
+                            GitHub
+                        </a>
                     </li>
                 </ul>
 
-                <div>
-                    <p>
+                <div class="text-center">
+                    <p class="copyright m-0">
                         No hay copyright; Desarrollado por:
-                        <a href="https://github.com/miklegonza">miklegonza</a>
+                        <a
+                            href="https://github.com/miklegonza"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="underline"
+                        >
+                            miklegonza
+                        </a>
                     </p>
-                    <p>2024</p>
+                    <p class="copyright m-0">2024</p>
                 </div>
             </footer>
         </main>
