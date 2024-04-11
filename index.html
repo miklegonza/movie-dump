@@ -27,103 +27,181 @@
     <body class="d-flex">
         <div class="vh-100 p-4 position-sticky top-0">
             <nav
-                class="sidebar navbar d-flex flex-column justify-content-between align-items-center h-100 p-4 rounded-4"
+                class="sidebar navbar d-flex flex-column justify-content-between align-items-center h-100 px-3 pt-4 rounded-4"
             >
                 <ul
                     class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-4"
                 >
                     <li>
-                        <a href="#"
-                            ><i class="fs-5 fa-solid fa-house-chimney"></i
-                        ></a>
+                        <a href="#" class="sidebar-icon p-2 rounded-3">
+                            <i class="fs-5 fa-solid fa-house-chimney"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fs-5 fa-solid fa-user"></i></a>
+                        <a href="#" class="sidebar-icon p-2 rounded-3">
+                            <i class="fs-5 fa-solid fa-user"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"
-                            ><i class="fs-5 fa-solid fa-paper-plane"></i
-                        ></a>
+                        <a href="#" class="sidebar-icon p-2 rounded-3">
+                            <i class="fs-5 fa-solid fa-paper-plane"></i>
+                        </a>
                     </li>
                 </ul>
-                <a href="#"
-                    ><i class="fs-5 fa-solid fa-right-from-bracket"></i
-                ></a>
+                <a href="#" class="sidebar-icon p-2 rounded-3">
+                    <i class="fs-5 fa-solid fa-right-from-bracket"></i>
+                </a>
             </nav>
         </div>
 
-        <main class="py-4 pe-4">
-            <header>
-                <a href="#">
+        <main class="d-flex flex-column gap-3 py-4 pe-4">
+            <header class="d-flex justify-content-between align-items-center">
+                <a href="#" class="d-flex align-items-center">
                     <img src="assets/img/magic-ball.webp" alt="" width="80" />
-                    <h1>Movie Dump</h1>
+                    <h1 class="fw-bold mx-2 my-0">Movie Dump</h1>
                 </a>
 
-                <button>Log In</button>
-                <button>Sign Up</button>
+                <div id="login-panel" class="d-flex gap-4">
+                    <button
+                        class="btn-account btn-login btn px-5 py-2 rounded-4"
+                    >
+                        Log In
+                    </button>
+                    <button
+                        id="signup-button"
+                        class="btn-account btn-signup btn px-5 py-2 rounded-4"
+                    >
+                        Sign Up
+                    </button>
+                </div>
             </header>
 
-            <section class="platforms">
-                <button>Max</button>
-                <button>Netflix</button>
-                <button>Disney</button>
-                <button>Prime</button>
-                <button>Claro</button>
-                <button>Paramount</button>
+            <section class="d-flex justify-content-between align-items-center">
+                <button class="btn-platform btn px-4 py-3 rounded-4">
+                    Max
+                </button>
+                <button class="btn-platform btn px-4 py-3 rounded-4">
+                    Netflix
+                </button>
+                <button class="btn-platform btn px-4 py-3 rounded-4">
+                    Disney
+                </button>
+                <button class="btn-platform btn px-4 py-3 rounded-4">
+                    Prime
+                </button>
+                <button class="btn-platform btn px-4 py-3 rounded-4">
+                    Claro
+                </button>
+                <button class="btn-platform btn px-4 py-3 rounded-4">
+                    Paramount
+                </button>
             </section>
 
-            <section class="movies">
-                <article>
-                    <h2>Destacado</h2>
-                    <img src="assets/img/casa-de-papel.webp" alt="" />
-                    <p>La Casa de Papel</p>
-                    <p>
+            <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" data-bs-visible="3">
+                  <div class="carousel-item active">
+                    <img src="assets/img/magic-ball.webp" class=" w-25" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/magic-ball-lines.webp" class=" w-25" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/magic-ball.webp" class=" w-25" alt="...">
+                  </div>
+                </div>
+                
+              </div> -->
+
+            <section class="d-flex justify-content-between row">
+                <article class="col-5">
+                    <h2 class="fw-bold fs-3 mb-3">Destacado</h2>
+                    <div class="ratio ratio-16x9">
+                        <img
+                            class="w-100 rounded-4"
+                            src="assets/img/casa-de-papel.webp"
+                            alt=""
+                        />
+                    </div>
+                    <p class="h2 fw-bold my-3">La Casa de Papel</p>
+                    <p class="text-wrap">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Iure alias, dicta magni nam ipsa tempore eum aut
                         quidem, inventore reiciendis assumenda soluta
                         consequatur minima! Quibusdam dolore soluta odio? Ad
-                        natus dolor veniam at ipsam porro in, officia aliquid
-                        obcaecati possimus dignissimos veritatis similique non,
-                        ducimus eius necessitatibus maxime provident repellat.
+                        natus dolor veniam at ipsam porro in.
                     </p>
-                    <div>
+                    <div
+                        class="d-flex justify-content-between align-items-center me-5 fw-bold"
+                    >
                         <p>Fantasy/Sci-Fi</p>
                         <p>2018</p>
                         <p>2h 16m</p>
                     </div>
                 </article>
 
-                <article>
+                <article class="col-7">
                     <article>
-                        <h3>Novedades</h3>
-                        <div>
-                            <img src="assets/img/wolverine.webp" alt="" />
-                            <img src="assets/img/annabelle.webp" alt="" />
+                        <h3 class="fw-bold fs-4 mt-3 mb-2">Novedades</h3>
+                        <div
+                            class="d-flex justify-content-between align-items-center"
+                        >
+                            <img
+                                src="assets/img/wolverine.webp"
+                                alt=""
+                                class="img small rounded-4"
+                            />
+                            <img
+                                src="assets/img/annabelle.webp"
+                                alt=""
+                                class="img small rounded-4"
+                            />
                             <img
                                 src="assets/img/guardians-of-galaxy.webp"
                                 alt=""
+                                class="img small rounded-4"
                             />
-                            <img src="assets/img/killbill.webp" alt="" />
+                            <img
+                                src="assets/img/killbill.webp"
+                                alt=""
+                                class="img small rounded-4"
+                            />
                             <img
                                 src="assets/img/bohemian-rhapsody.webp"
                                 alt=""
+                                class="img small rounded-4"
                             />
                         </div>
                     </article>
 
                     <article>
-                        <h3>Recomendados</h3>
-                        <div>
-                            <img src="assets/img/wolverine.webp" alt="" />
-                            <img src="assets/img/annabelle.webp" alt="" />
+                        <h3 class="fw-bold fs-4 mt-3 mb-2">Recomendados</h3>
+                        <div
+                            class="d-flex justify-content-between align-items-center"
+                        >
+                            <img
+                                src="assets/img/wolverine.webp"
+                                alt=""
+                                class="img small rounded-4"
+                            />
+                            <img
+                                src="assets/img/annabelle.webp"
+                                alt=""
+                                class="img small rounded-4"
+                            />
                             <img
                                 src="assets/img/guardians-of-galaxy.webp"
                                 alt=""
+                                class="img small rounded-4"
                             />
-                            <img src="assets/img/killbill.webp" alt="" />
+                            <img
+                                src="assets/img/killbill.webp"
+                                alt=""
+                                class="img small rounded-4"
+                            />
                             <img
                                 src="assets/img/bohemian-rhapsody.webp"
                                 alt=""
+                                class="img small rounded-4"
                             />
                         </div>
                     </article>
@@ -131,60 +209,136 @@
             </section>
 
             <section class="family">
-                <h2>Familia</h2>
-                <article>
-                    <img src="assets/img/wolverine.webp" alt="" />
-                    <img src="assets/img/annabelle.webp" alt="" />
-                    <img src="assets/img/guardians-of-galaxy.webp" alt="" />
-                    <img src="assets/img/killbill.webp" alt="" />
-                    <img src="assets/img/bohemian-rhapsody.webp" alt="" />
-                    <img src="assets/img/ironman.webp" alt="" />
+                <h2 class="fw-bold fs-3 mb-3">Familia</h2>
+                <article
+                    class="d-flex justify-content-between align-items-center"
+                >
+                    <img
+                        src="assets/img/wolverine.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/annabelle.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/guardians-of-galaxy.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/killbill.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/bohemian-rhapsody.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/ironman.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
                 </article>
             </section>
 
             <section class="comedy">
-                <h2>Comedia</h2>
-                <article>
-                    <img src="assets/img/wolverine.webp" alt="" />
-                    <img src="assets/img/annabelle.webp" alt="" />
-                    <img src="assets/img/guardians-of-galaxy.webp" alt="" />
-                    <img src="assets/img/killbill.webp" alt="" />
-                    <img src="assets/img/bohemian-rhapsody.webp" alt="" />
-                    <img src="assets/img/ironman.webp" alt="" />
+                <h2 class="fw-bold fs-3 mb-3">Comedia</h2>
+                <article
+                    class="d-flex justify-content-between align-items-center"
+                >
+                    <img
+                        src="assets/img/wolverine.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/annabelle.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/guardians-of-galaxy.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/killbill.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/bohemian-rhapsody.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
+                    <img
+                        src="assets/img/ironman.webp"
+                        alt=""
+                        class="img big rounded-4"
+                    />
                 </article>
             </section>
 
-            <footer>
+            <footer
+                class="d-flex flex-column justify-content-center align-items-center"
+            >
                 <div>
-                    <a href="#">
+                    <a href="#" class="d-flex align-items-center gap-2">
                         <img
                             src="assets/img/magic-ball-lines.webp"
                             alt=""
                             width="40"
                         />
-                        <p>Movie Dump</p>
+                        <p class="fs-4 m-0">Movie Dump</p>
                     </a>
                 </div>
 
-                <ul>
-                    <li><a href="#top">Inicio</a></li>
-                    <li><a href="/register">Registro</a></li>
-                    <li><a href="/contact">Contacto</a></li>
+                <ul
+                    class="list-unstyled d-flex justify-content-between align-items-center gap-3 my-3"
+                >
+                    <li>
+                        <a class="footer-link underline" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="footer-link underline" href="/register.html">
+                            Registro
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link underline" href="/contact.html">
+                            Contacto
+                        </a>
+                    </li>
                     <li>
                         <a
+                            class="footer-link underline"
                             href="https://github.com/miklegonza/movie-dump"
                             target="_blank"
-                            >GitHub</a
+                            rel="noopener noreferrer"
                         >
+                            GitHub
+                        </a>
                     </li>
                 </ul>
 
-                <div>
-                    <p>
+                <div class="text-center">
+                    <p class="copyright m-0">
                         No hay copyright; Desarrollado por:
-                        <a href="https://github.com/miklegonza">miklegonza</a>
+                        <a
+                            href="https://github.com/miklegonza"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="underline"
+                        >
+                            miklegonza
+                        </a>
                     </p>
-                    <p>2024</p>
+                    <p class="copyright m-0">2024</p>
                 </div>
             </footer>
         </main>
