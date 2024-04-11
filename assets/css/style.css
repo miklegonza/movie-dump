@@ -23,7 +23,6 @@ a {
 
 .sidebar {
     background-color: var(--primary-dark);
-    width: 72px;
 }
 
 .btn-account {
@@ -41,7 +40,6 @@ a {
 
 .btn-platform {
     border: 2px solid var(--primary-dark);
-    padding: 1rem 1.5rem;
     width: 10rem;
     color: var(--white); /* Provisoinal */
 }
@@ -93,4 +91,12 @@ a {
 .underline:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.sidebar-icon {
+    transition: all .25s;
+}
+
+.sidebar-icon:hover {
+    background-color: var(--secondary-dark);
 }
