@@ -8,7 +8,95 @@
 }
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: var(--background-dark);
+    color: var(--white);
+}
 
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.sidebar {
+    background-color: var(--primary-dark);
+}
+
+.btn-account {
+    color: var(--white);
+    border: 2px solid var(--primary-dark);
+}
+
+.btn-login {
+    background-color: var(--primary-dark);
+}
+
+.btn-signup {
+    background-color: var(--background-dark);
+}
+
+.btn-platform {
+    border: 2px solid var(--primary-dark);
+    width: 10rem;
+    color: var(--white); /* Provisoinal */
+}
+
+.btn-login:hover,
+.btn-signup:hover,
+.btn-platform:hover {
+    background-color: var(--secondary-dark);
+}
+
+.img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+.small {
+    width: 8rem;
+}
+
+.big {
+    width: 11rem;
+}
+
+.footer-link {
+    font-size: 0.95rem;
+}
+
+.copyright {
+    font-size: 0.75rem;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.sidebar-icon {
+    transition: all .25s;
+}
+
+.sidebar-icon:hover {
+    background-color: var(--secondary-dark);
+}
