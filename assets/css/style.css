@@ -5,6 +5,7 @@
     --primary-dark: #55286f;
     --secondary-dark: #c589e8;
     --white: #f0f0f0;
+    --dark-hover: #321642;
 }
 
 * {
@@ -21,10 +22,20 @@ a {
     text-decoration: none;
 }
 
+/* Sidebar */
 .sidebar {
     background-color: var(--primary-dark);
 }
 
+.sidebar-icon {
+    transition: all .25s;
+}
+
+.sidebar-icon:hover {
+    background-color: var(--secondary-dark);
+}
+
+/* Buttons */
 .btn-account {
     color: var(--white);
     border: 2px solid var(--primary-dark);
@@ -50,6 +61,7 @@ a {
     background-color: var(--secondary-dark);
 }
 
+/* Images */
 .img {
     aspect-ratio: 9/16;
     object-fit: cover;
@@ -63,6 +75,7 @@ a {
     width: 11rem;
 }
 
+/* Footer */
 .footer-link {
     font-size: 0.95rem;
 }
@@ -71,6 +84,7 @@ a {
     font-size: 0.75rem;
 }
 
+/* Underline animation */
 .underline {
     position: relative;
 }
@@ -93,10 +107,31 @@ a {
     transform-origin: bottom left;
 }
 
-.sidebar-icon {
-    transition: all .25s;
+.img-container {
+    background-color: var(--primary-dark);
 }
 
-.sidebar-icon:hover {
+.form-container {
     background-color: var(--secondary-dark);
+    width: 24rem;
+}
+
+.dark-text {
+    color: var(--background-dark);
+}
+
+.links::after {
+    background-color: var(--background-dark);
+}
+
+.links  {
+    font-size: .75rem;
+}
+
+.remember-text {
+    font-size: .9rem;
+}
+
+.btn-form:hover {
+    background-color: var(--dark-hover);
 }
