@@ -5,6 +5,7 @@
     --primary-dark: #55286f;
     --secondary-dark: #c589e8;
     --white: #f0f0f0;
+    --dark-hover: #321642;
 }
 
 * {
@@ -112,6 +113,7 @@ a {
 
 .form-container {
     background-color: var(--secondary-dark);
+    width: 24rem;
 }
 
 .dark-text {
@@ -128,4 +130,8 @@ a {
 
 .remember-text {
     font-size: .9rem;
+}
+
+.btn-form:hover {
+    background-color: var(--dark-hover);
 }
