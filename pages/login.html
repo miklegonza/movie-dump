@@ -6,7 +6,7 @@
         <title>Movie Dump</title>
         <link
             rel="shortcut icon"
-            href="assets/img/favicon.ico"
+            href="../assets/img/favicon.ico"
             type="image/x-icon"
         />
         <link
@@ -15,37 +15,25 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
     </head>
     <body class="d-flex justify-content-center align-items-center vh-100">
         <div class="d-flex p-0">
             <section
-                class="img-container d-flex justify-content-center align-items-center px-4 rounded-start-4"
+                class="img-container d-flex justify-content-center align-items-center rounded-start-4"
             >
-                <img src="assets/img/undraw_playlist.svg" alt="" width="360" />
+                <img
+                    src="../assets/img/undraw_movie_night.svg"
+                    alt=""
+                    width="360"
+                />
             </section>
             <section class="form-container dark-text px-4 py-5 rounded-end-5">
                 <form
                     class="d-flex flex-column align-items-start justify-content-center"
                 >
-                    <h2 class="fw-bold">Cuenta nueva</h2>
-                    <p class="pb-3">
-                        Regístrate y disfruta de todos los beneficios de Movie
-                        Dump
-                    </p>
-                    <input
-                        class="form-control my-2"
-                        type="text"
-                        placeholder="Nombre"
-                        required
-                    />
-                    <input
-                        class="form-control my-2"
-                        type="tel"
-                        pattern="[0-9]{10}"
-                        placeholder="Teléfono"
-                        required
-                    />
+                    <h2 class="fw-bold">¡Bienvenid@!</h2>
+                    <p class="pb-3">Por favor inicia sesión para continuar</p>
                     <input
                         class="form-control my-2"
                         type="email"
@@ -63,17 +51,36 @@
                         Tu contraseña debe ser de 8 a 20 caracteres. Debe
                         contener letras y números sin espacios.
                     </div>
+                    <div class="form-check mb-3">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="remember"
+                        />
+                        <label
+                            class="remember-text form-check-label"
+                            for="remember"
+                        >
+                            Mantener la sesión iniciada
+                        </label>
+                    </div>
                     <button
-                        id="signup"
+                        id="login"
                         class="w-100 py-2 mt-2 btn btn-login btn-form text-white"
                     >
-                        Registrarse
+                        Iniciar sesión
                     </button>
                 </form>
 
-                <div class="d-flex justify-content-end login-links w-100">
-                    <a href="../login.html" class="dark-text links underline">
-                        ¿Ya tienes una cuenta?
+                <div class="d-flex justify-content-between login-links w-100">
+                    <a
+                        href="register.html"
+                        class="dark-text links underline"
+                    >
+                        ¿No estás registrado?
+                    </a>
+                    <a href="#" class="dark-text links underline" id="forgot">
+                        Olvidé mi contraseña
                     </a>
                 </div>
             </section>
@@ -84,6 +91,6 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
-        <script src="assets/js/index.js"></script>
+        <script src="../assets/js/index.js"></script>
     </body>
 </html>

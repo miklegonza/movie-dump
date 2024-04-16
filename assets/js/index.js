@@ -12,10 +12,10 @@ if (forgot) {
     forgot.addEventListener('click', () => alert('Lo siento mucho :c'));
 }
 
-if (signupButton) redirect(signupButton, 'register.html');
+if (signupButton) redirect(signupButton, 'pages/register.html');
 
-if (loginButton) redirect(loginButton, 'login.html');
+if (loginButton) redirect(loginButton, 'pages/login.html');
 
-if (login) redirect(login, './');
+if (login) redirect(login, '../');
 
 if (signup) redirect(signup, 'login.html');
