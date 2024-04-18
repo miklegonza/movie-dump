@@ -28,7 +28,7 @@ a {
 }
 
 .sidebar-icon {
-    transition: all .25s;
+    transition: all 0.25s;
 }
 
 .sidebar-icon:hover {
@@ -124,14 +124,20 @@ a {
     background-color: var(--background-dark);
 }
 
-.links  {
-    font-size: .75rem;
+.links {
+    font-size: 0.75rem;
 }
 
 .remember-text {
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .btn-form:hover {
     background-color: var(--dark-hover);
+}
+
+.banner {
+    background-image: url('../img/banner.jpg');
+    background-color: var(--primary-dark);
+    background-size: cover;
 }
