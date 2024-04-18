@@ -52,7 +52,7 @@ a {
 .btn-platform {
     border: 2px solid var(--primary-dark);
     width: 10rem;
-    color: var(--white); /* Provisoinal */
+    height: 4rem;
 }
 
 .btn-login:hover,
@@ -107,25 +107,24 @@ a {
     transform-origin: bottom left;
 }
 
+/* Login and Signup */
 .img-container {
     background-color: var(--primary-dark);
 }
 
 .form-container {
     background-color: var(--secondary-dark);
+    color: var(--background-dark);
     width: 24rem;
 }
 
-.dark-text {
+.links {
     color: var(--background-dark);
+    font-size: 0.75rem;
 }
 
 .links::after {
     background-color: var(--background-dark);
-}
-
-.links {
-    font-size: 0.75rem;
 }
 
 .remember-text {
