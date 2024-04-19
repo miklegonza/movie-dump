@@ -22,10 +22,6 @@ a {
     text-decoration: none;
 }
 
-footer {
-    width: 300px;
-}
-
 /* Sidebar */
 .sidebar {
     background-color: var(--primary-dark);
@@ -46,7 +42,7 @@ footer {
 }
 
 .platforms {
-    max-width: 300px;
+    max-width: 388px;
 }
 
 .buttons {
@@ -194,17 +190,14 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .arrow {
-        display: none !important;
+    .small {
+        width: 75%;
     }
 }
 
 @media (min-width: 768px) {
     .platforms {
         max-width: 800px;
-    }
-    footer {
-        width: auto;
     }
 }
 
